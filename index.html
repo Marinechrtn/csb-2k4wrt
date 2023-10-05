@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learnify</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <style>
+      
+      .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #6b9080; 
+        padding: 20px; 
+        width: 100%;
+      }
+
+     
+      .text-column {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .form-column {
+        flex: 1;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+   
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      form {
+        background-color: #ffffff;
+        padding: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+      }
+
+      button[type="submit"] {
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #6b9080;
+        padding: 20px;
+        width: 100%;
+      }
+
+      .text-column {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .form-column {
+        flex: 1;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      .second-block {
+        background-color: #ffffff;
+        text-align: center; 
+        padding: 20px;
+      }
+
+      .block-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .block-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .block-images img {
+        width: calc(
+          50% - 20px
+        ); 
+        max-width: 100%; 
+        margin: 10px;
+      }
+
+      .third-block {
+        background-color: #ffffff;
+        text-align: center; 
+         padding: 20px;
+      }
+
+     
+      .third-block-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .text-columns {
+        display: flex;
+        justify-content: space-between; 
+        }
+
+     
+      .text-column {
+        width: calc(
+          33.33% - 10px
+        ); 
+          padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+     
+      .text-column h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+     
+      .text-column p {
+        font-size: 14px;
+      }
+      
+.fourth-block {
+    background-color: #CCE3DE;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px; 
+    }
+
+    
+      .fourth-block-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .fourth-block-subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .customer-reviews {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap; }
+
+      
+      .customer-review {
+        width: calc(
+          50% - 10px
+        );
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        display: flex; 
+        }
+
+     
+      .customer-review img {
+        width: 80px; 
+         max-width: 100%;
+        margin-right: 10px; 
+          border-radius: 50%; 
+          }
+
+     
+      .customer-review p {
+        font-size: 14px;
+        flex: 1; 
+        }
+     
+      .fifth-block {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .column {
+            width: 48%; 
+            float: left; 
+              margin-right: 2%; 
+              padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+             }
+
+        .column h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .column img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .column p {
+            font-size: 14px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+   .sixth-block {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .sixth-block .column {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .sixth-block .column img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .sixth-block .column p {
+            font-size: 14px;
+        }
+   .seventh-block {
+            background-color: #ffffff;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .seventh-block h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .seventh-block .buttons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .seventh-block .button {
+            flex: 1;
+            margin-right: 10px; 
+            padding: 10px 20px;
+            background-color: #6B9080;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        .green-button {
+    background-color: #98FB98; 
+    color: #ffffff; 
+   
+}
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://learnify.tradly.co/">
+          <a href="https://imgbb.com/"
+            ><img
+              src="https://i.ibb.co/zmDv8Sr/logo-learnify.png"
+              alt="logo-learnify"
+              border="0"
+              width="112"
+              height="28"
+            />
+          </a>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Learnify
+          </a>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <hr class="navbar-divider" />
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>A propos</strong>
+              </a>
+              <a class="button is-light">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="text-column">
+        <h2><strong> Plateforme de e-learning </strong></h2>
+        <p>
+            Learnify est une plateforme qui permet la mise en relation entre
+            professionnels et particuliers de divers domaines. Elle permet un
+            accès plus facile à des cours de différents domaine dans des
+            conditions optimales.
+        </p>
+        <button class="green-button" type="submit">Découvrir les cours</button>
+      </div>
+      <div class="form-column">
+        <h2>Inscrivez vous à la newsletter</h2>
+        <form>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required /><br />
+
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="motdepasse">Mot de passe :</label>
+          <input
+            type="password"
+            id="motdepasse"
+            name="motdepasse"
+            required
+          /><br />
+
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+    </div>
+    <div class="second-block">
+      <h2 class="block-title">Recommandé par les meilleurs</h2>
+      <div class="block-images">
+        <a href="https://imgbb.com/"
+          ><img src="https://i.ibb.co/3ds1C8x/1.png" alt="1" border="0"
+        /></a>
+        <a href="https://ibb.co/61dThtW"
+          ><img src="https://i.ibb.co/9VM1X4r/2.png" alt="2" border="0"
+        /></a>
+        <a href="https://imgbb.com/"
+          ><img src="https://i.ibb.co/K9rYbD1/3.png" alt="3" border="0"
+        /></a>
+        <a href="https://ibb.co/0Mv0JtN"
+          ><img src="https://i.ibb.co/LtHTp5w/4.png" alt="4" border="0"
+        /></a>
+        <a href="https://ibb.co/tQJRQc4"
+          ><img src="https://i.ibb.co/VJq6JDt/5.jpg" alt="5" border="0"
+        /></a>
+      </div>
+    </div>
+
+    <div class="third-block">
+      <h2 class="third-block-title">Comment ça marche ?</h2>
+      <div class="text-columns">
+        <div class="text-column">
+          <h3><strong> je m'inscris</strong></h3>
+          <p>
+            Tout d'abord, il est important de s'inscrire afin de pouvoir
+            contacter les professionnels proposant des cours et pour poursuivre
+            son achat. L'inscription ne demande aucune donnée bancaire et permet
+            d'acceder à davantage de fonctionnalités du site.
+          </p>
+        </div>
+        <div class="text-column">
+          <h3><strong>Je choisis mon cours </strong></h3>
+          <p>
+            Une fois inscris, je peux contacter les professionnels afin
+            d'obtenir davantage d'informations sur leur cours, le niveau, le
+            matériel requis... Une fois qu'un cours m'interesse et qu'il y a des
+            disponibilités, je n'ai plus qu'à le mettre dans mon panier et
+            passer la commande.
+          </p>
+        </div>
+        <div class="text-column">
+          <h3><strong>J'assiste au cours</strong></h3>
+          <p>
+            Une fois inscris et le cours acheté, j'assiste au cours, pouvant
+            être individuel comme collectif, en présentiel comme en distanciel.
+            Ceci est a fixer avec le professionnel
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="fourth-block">
+      <h2 class="fourth-block-title"><strong>Témoignages clients</strong></h2>
+      <h3 class="fourth-block-subtitle">
+        <strong>Découvrez ce que disent nos clients</strong>
+      </h3>
+      <div class="customer-reviews">
+        <div class="customer-review">
+          <a href="https://ibb.co/s9SMhT2"
+            ><img src="https://i.ibb.co/F4vj9QK/1.jpg" alt="1" border="0"
+          /></a>
+          <p>
+            J'ai commencé le piano seule mais je n'arrivais pas à m'améliorer.
+            Certaines choses sont trop complexes à apprendre seule donc j'ai
+            decidé de m'inscrire sur Learnify et je n'aurais pu espérer mieux.
+            J'ai vu mon niveau augmenter de manière considèrable grâce aux
+            professeurs.
+          </p>
+        </div>
+        <div class="customer-review">
+          <a href="https://ibb.co/PG1Rd1r"
+            ><img src="https://i.ibb.co/KxVYJV5/1.jpg" alt="1" border="0"
+          /></a>
+          <p>
+            J'ai commencé le piano seule mais je n'arrivais pas à m'améliorer.
+            Certaines choses sont trop complexes à apprendre seule donc j'ai
+            decidé de m'inscrire sur Learnify et je n'aurais pu espérer mieux.
+            J'ai vu mon niveau augmenter de manière considèrable grâce aux
+            professeurs.
+          </p>
+        </div>
+        <div class="customer-review">
+          <a href="https://ibb.co/Jth2PSb"
+            ><img
+              src="https://i.ibb.co/2hbPBpL/8-trucs-a-savoir-sur-la-psychologie-masculine-pour-comprendre-les-hommes.jpg"
+              alt="8-trucs-a-savoir-sur-la-psychologie-masculine-pour-comprendre-les-hommes"
+              border="0"
+          /></a>
+          <p>
+            Je suis sportif en dehors de mon métier. Grâce à la plateforme
+            Learnify j'ai pu partager mes compétences et surtout partager mon
+            sport tout en étant rémunéré.
+          </p>
+        </div>
+        <div class="customer-review">
+          <a href="https://ibb.co/ykp6MT8"
+            ><img
+              src="https://i.ibb.co/hdcBn5K/39506373-33977971.jpg"
+              alt="39506373-33977971"
+              border="0"
+          /></a>
+          <p>
+            Je suis passionnée de cuisine et j'ai pu les enseigner à plusieurs
+            personnes. La plateforme est facile d'utilisation.
+          </p>
+        </div>
+      </div>
+
+      <div class="fifth-block">
+          <div class="column">
+              <h2><strong>Facilité d'accès</strong></h2>
+              <a href="https://ibb.co/DR6LWL5"><img src="https://i.ibb.co/4VDJtJP/My-Piano-Pop-Se-reperer-sur-un-piano.webp" alt="My-Piano-Pop-Se-reperer-sur-un-piano" border="0"></a>
+              <p>Il ne faut que s'inscrire et vous pouvez prendre le cours que vous voulez </p>
+          </div>
+          <div class="column">
+              <h2><strong>Gain de compétences</strong></h2>
+              <p>Les cours se suivent très facilement</p>
+              <a href="https://ibb.co/1mF7dJC"><img src="https://i.ibb.co/qrT7WFH/Les-de-tails-qui-font-la-cuisine-en-2021.jpg" alt="Les-de-tails-qui-font-la-cuisine-en-2021" border="0"></a>
+             
+          </div>
+          <div class="sixth-block clearfix"> <!-- Ajout de la classe clearfix pour effacer le flottement -->
+            <div class="column">
+                <h2><strong>Ou sommes nous ? </strong></h2>
+                <p>Adresse de Learnify 
+                  20456
+                  Grenoble, France
+                </p>
+            </div>
+            <div class="column">
+                <a href="https://ibb.co/cQ41TX7"><img src="https://i.ibb.co/vk0HzvK/Google-Maps.png" alt="Google-Maps" border="0"></a>
+            </div>
+        </div>
+        <div class="seventh-block">
+            <h2>Learnify</h2>
+            <div class="buttons">
+                <button class="button">About</button>
+                <button class="button">Contact</button>
+                <button class="button">Mention légal</button>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
